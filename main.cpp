@@ -21,7 +21,7 @@ int main(){
 	char *fileName;
 	FILE *file;
 	fileName = "PE-1.txt";
-	char data[1024] = "I want to learn PE file format!";
+	char data[1024] = {73, 32, 119, 97, 110, 116, 32, 108, 101, 97, 114, 110, 32, 80, 69, 32, 102, 105, 108, 101, 32, 102, 111, 114, 109, 97, 116, 33};
 	
 	if(access(fileName, F_OK) != -1){
 		if(searchForString(fileName, checkString) == 1){
